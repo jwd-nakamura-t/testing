@@ -1,4 +1,5 @@
 <?php
+require 'recipe/common.php';
 require 'recipe/symfony.php';
 
 // デプロイ先のサーバを定義します。
