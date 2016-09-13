@@ -2,4 +2,4 @@
 
 set -ex
 
-./dep deploy production
+./deploy/dep deploy production
