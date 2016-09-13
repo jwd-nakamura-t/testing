@@ -13,4 +13,5 @@ deployment:
     branch: develop
     commands:
       - cd ./deploy
-      - ./deploy.sh
+      - pwd
+      - ./deploy/deploy.sh
