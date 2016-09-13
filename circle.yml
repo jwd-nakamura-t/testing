@@ -12,6 +12,5 @@ deployment:
   develop:
     branch: develop
     commands:
-      - cd ./deploy
-      - pwd
+      - sudo chmod 777 ./deploy/deploy.sh
       - ./deploy/deploy.sh
