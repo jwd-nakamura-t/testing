@@ -12,4 +12,5 @@ deployment:
   develop:
     branch: develop
     commands:
-      - echo "develop branch deploy start"
+      - cd ./deploy
+      - php deployer.phar deploy -vvv production
