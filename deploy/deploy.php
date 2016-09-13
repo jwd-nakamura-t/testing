@@ -1,4 +1,5 @@
 <?php
+require 'recipe/symfony.php';
 
 // デプロイ先のサーバを定義します。
 server('test.server', '157.7.52.90 ', 22)
