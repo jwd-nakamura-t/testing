@@ -8,8 +8,9 @@ server('test.server', '157.7.52.90 ', 22)
     // ssh agentを使い認証します。
     ->identityFile()
     ->forwardAgent()
-    ->stage('production')
+    ->stage('develop')
     // デプロイ先のベースパスを定義します。
+    ->env('branch', 'develop')
     ->env('deploy_path', '/var/www/your/project');
 
 // Gitリポジトリを設定します。サーバ上にgitが必要です。
