@@ -14,7 +14,4 @@ deployment:
     commands:
       - ls -la ~/.ssh/
       - pwd
-      - cd ./deploy
-      - pwd
-      - sudo chmod 777 ./deploy.sh
-      - ./deploy.sh
+      - cd ./deploy && sudo chmod 777 ./deploy.sh && ./deploy.sh
