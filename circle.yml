@@ -2,9 +2,9 @@ test:
   override:
     - phpunit SampleTest
 machine:
-   php:
+  timezone: Asia/Tokyo
+  php:
     version: 5.6.2
-    timezone: Asia/Tokyo
 deployment:
   master:
     branch: master
