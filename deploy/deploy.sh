@@ -2,7 +2,7 @@
 
 set -ex
 
-sudo chmod 777 ./deploy/dep
+sudo chmod 777 ./dep
 ssh-add $HOME/.ssh/id_circleci_github
-./deploy/dep
-./deploy/dep deploy production
+./dep
+./dep deploy production
