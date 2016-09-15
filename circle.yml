@@ -9,7 +9,7 @@ deployment:
   master:
     branch: master
     commands:
-      - echo "master branch deploy start"
+      - cd ./deploy && sudo chmod 777 ./master_deploy.sh && ./master_deploy.sh
   develop:
     branch: develop
     commands:
