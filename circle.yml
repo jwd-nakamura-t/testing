@@ -2,14 +2,15 @@ test:
   override:
     - phpunit SampleTest
 machine:
-   php:
+  timezone: Asia/Tokyo
+  php:
     version: 5.6.2
 deployment:
   master:
     branch: master
     commands:
-      - echo "master branch deploy start"
+      - cd ./deploy && sudo chmod 777 ./master_deploy.sh && ./master_deploy.sh
   develop:
     branch: develop
     commands:
-      - echo "develop branch deploy start"
+      - cd ./deploy && sudo chmod 777 ./deploy.sh && ./deploy.sh
