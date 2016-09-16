@@ -9,8 +9,8 @@ deployment:
   master:
     branch: master
     commands:
-      - cd ./deploy && sudo chmod 777 ./master_deploy.sh && ./deploy.sh develop
+      - cd ./deploy && sudo chmod 777 ./master_deploy.sh && ./deploy.sh production
   develop:
     branch: develop
     commands:
-      - cd ./deploy && sudo chmod 777 ./deploy.sh && ./deploy.sh production
+      - cd ./deploy && sudo chmod 777 ./deploy.sh && ./deploy.sh develop
